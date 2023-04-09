@@ -1,0 +1,1289 @@
+@charset "utf-8";html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{margin:0;padding:0;border:0;vertical-align:baseline}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display:block}
+html{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:-moz-none;-ms-user-select:none}
+html, body {font-family:Arial, Helvetica, sans-serif;line-height:1;color:#000;font-size: 16px; -webkit-text-size-adjust:none;}
+
+*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-font-smoothing:antialiased}
+*, *:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+
+ol, ul{list-style:none}
+blockquote, q{	quotes:none}
+blockquote:before, blockquote:after, q:before, q:after{content:'';content:none}
+:focus{outline:0;}
+a{text-decoration:none}
+p{font-weight:normal;font-size:100%;font-family: inherit;line-height:1.4}
+strong{text-decoration:none;font-weight:bold}
+cite, em, i{text-decoration:none;font-weight:normal;font-family:Arial, Helvetica, sans-serif;line-height:1;vertical-align:baseline}
+pre, code{text-decoration:none}
+ins{text-decoration:none}
+sup{text-decoration:none;bottom:5px;font-size:70%;vertical-align:baseline;font-weight:normal;position:relative}
+dl dt{text-decoration:none}
+dd{text-decoration:none}
+mark{text-decoration:none;font-weight:normal;vertical-align:baseline}
+del{text-decoration:line-through}
+img[alt]{font-size:0}
+
+h1, h2, h3, h4, h5, h6{font-size:100%;font-family: inherit; -webkit-text-size-adjust:none;line-height:1.2}
+
+button, input {
+	border: none;
+	background: none;
+	-webkit-appearance: none;
+	margin: 0;
+	padding: 0;
+}
+
+/*container*/
+.fs_main, .fs_section, .fs_content, .fs_box, .fs_area_pic, .fs_area_txt {
+	position:relative;
+	display: block;
+	width:100%;
+	height: auto;
+}
+
+.hide {
+	display:none !important;
+}
+
+.fs_no_scroll {
+	overflow: hidden;
+}
+
+.fs_layout_visible::after {
+	content: '';
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 0;
+	clear: both;
+}
+
+.fs_area_pic > img {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.fs_title h1, .fs_title h2, .fs_area_txt h3 strong, .fs_btn span {
+	font-family:"iCielSamsungSharpSansBold", arial;
+	font-weight: normal;
+}
+
+.fs_title h2 {
+	font-size: 2.82135vw;
+	text-align: center;
+}
+
+.fs_btn {
+	display: inline-block;
+}
+
+.fs_order_but {
+	width: 24.89583vw;
+	max-width: 474px;
+}
+
+.fs_btn img {
+	width: 100%;
+}
+
+.fs_area_txt h3 {
+	font-family:"iCielSamsungSharpSansMedium", arial;
+	font-weight: normal;
+}
+
+/*kv & schema*/
+.fs_kv_schema {
+	padding: 1.5625vw 0 2.60416vw 0;
+	text-align: center;
+}
+
+.fs_kv_schema::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 20.3125vw;
+	background: url(../images/kv_overlay.png) repeat-x left bottom;
+	z-index: -1;
+}
+
+.fs_kv_main, .fs_kv_intro{
+	position: relative;
+	display: inline-block;
+	vertical-align: bottom;
+	z-index: 1;
+}
+
+.fs_kv_main {
+	width: 45.3125vw;
+}
+
+.fs_kv_main .fs_area_pic {
+	width: 89.8%;
+	margin: 0 auto;
+}
+
+.fs_kv_main h3 {
+	font-size: 1.59226vw;
+	margin-bottom: 1.5625vw;
+}
+
+.fs_feature {
+	margin-top: -22.65625vw;
+	color: #fff;
+}
+
+.fs_feature  ul {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.fs_feature li {
+	position: relative;
+	display: block;
+	float: left;
+	width: 33%;
+	white-space: nowrap;
+}
+
+.fs_feature li:nth-child(2) {
+	margin-left: 1%;
+	left: 1.2%;
+}
+
+.fs_feature p {
+	font-size: 0.90154vw;
+	font-family:"SamsungOne800", arial;	
+}
+
+.fs_feature span {
+	position: relative;
+	display: inline-block;
+	width: 3.48958vw;
+	height: auto;
+	margin-right: 2.5%;
+	vertical-align: middle;
+}
+
+.fs_feature span img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.fs_feature p {
+	display: inline-block;
+	width: auto;
+	height: auto;
+	vertical-align: middle;
+	text-align: left;
+}
+
+.fs_kv_intro {
+	width: 41.6666%;
+	margin-bottom: 0.5vw;
+}
+
+.fs_kv_intro .fs_title {
+	margin-bottom: 7.96875vw;
+}
+
+.fs_kv_intro h1 {
+	font-size: 2.57886vw;
+}
+
+.fs_kv_intro h1 img {
+	width: 30.05208vw;
+}
+
+.fs_promotion_title, .kv_promotion_products, .fs_promotion_timer, .fs_btn_box{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.fs_promotion_title {
+	position: relative;	
+	display: block;
+	width: 60%;
+	padding: 0 3%;
+	height: auto;
+	margin: -9.09% auto;
+	background-color: #fff;
+	z-index: 1;
+}
+
+.fs_promotion_title img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.kv_promotion_products {
+	padding: 7% 1% 5% 4%;
+}
+
+.kv_promotion_products .fs_box{
+	float: left;
+	width: 33.3333%;
+	padding: 0 1.5%;
+	z-index: 2;
+}
+
+.kv_promotion_products h3 {
+	font-size: 0.85156vw;
+	color: #fff;
+}
+
+.fs_promotion_timer {
+	padding: 3vw 0 1.458363vw 0;
+	color: #fff;
+}
+
+.fs_promotion_timer p {
+	font-family: 'iCielSamsungSharpSansRegular';
+	font-size: 1.32864vw;
+}
+
+.fs_promotion_timer p strong {
+	font-family: 'iCielSamsungSharpSansBold';
+}
+
+.kv_promotions .fs_btn {
+	font-size: 1.6776vw;
+}
+
+/*product & gift*/
+.fs_product_gift {
+	padding: 5vw 0 4.5vw 0;
+}
+
+.fs_product_gift .fs_title {
+	margin-bottom: 4.0625vw;
+}
+
+.fs_products {
+	position: relative;
+	display: block;
+	width: 88%;
+	max-width: 1660px;
+	margin: 0 auto;
+	font-size: 0;
+	text-align: center;
+}
+
+.fs_products .fs_box {
+	width: 31%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.fs_product {
+	position: relative;
+	display: block;
+	width: 90%;
+	height: auto;
+	max-width: 330px;
+	margin: 0 auto;
+}
+
+.fs_product .fs_area_pic {
+	display: block;
+	width: 60%;
+	max-width: 250px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.fs_promotion_pic {
+	position: absolute;
+	left: 100%;
+	bottom: 0;
+	width: 47%;
+	height: auto;
+	margin-left: -30px;
+}
+
+.fs_product .fs_area_txt {
+	padding: 24px 0 0 0;
+}
+
+.fs_product h3 {
+	font-size: 18.75px;
+}
+
+.fs_product h3, .fs_product strong, .fs_prize {
+	font-family:"iCielSamsungSharpSansBold", arial;
+	font-weight: normal;
+}
+
+.fs_product .fs_area_txt h3 {
+	margin-bottom: 10px;
+}
+
+.fs_promotion_txt {
+	margin-bottom: 22px;
+	min-height: 51px;
+}
+	
+.fs_promotion_txt h3 {
+	font-family:"iCielSamsungSharpSansRegular", arial;
+	margin-bottom: 13px;
+}
+
+.fs_prize {
+	margin-bottom: 15px;
+	font-size: 25px;
+}
+
+.fs_product li {
+	font-family: 'SamsungOne';
+	font-size: 12.5px;
+	margin-bottom: 6px;
+}
+
+.fs_promotion_pic {
+	position: absolute;
+	right: -7%;
+	bottom: 1%;
+	width: 35%;
+	height: auto;
+}
+
+.fs_promotion_pic img {
+	width: 100%;
+	height: auto;
+}
+
+.fs_product .fs_btn {
+	font-size: 13.75px;
+	margin-bottom: 17px;
+}
+
+.fs_location {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.fs_location img {
+	width: 100%;
+}
+
+/*hot promo & skus*/
+.fs_promo_skus {
+	width: 88%;
+	margin: 0 auto 5vw auto;
+	max-width: 1660px;
+	overflow: hidden;
+	box-shadow: 4px 4px 13px rgba(0,0,0,0.24);
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.fs_promo_skus .fs_title {
+	padding: 1.40625vw 0 1.25vw 0;
+	background-color: #0a0e10;
+	color: #fff;
+}
+
+.fs_hot_promotions {
+	padding: 3vw 4vw 2.08333vw 4vw;
+	font-size: 0;
+	text-align: center;
+}
+
+.fs_hot_promotions .fs_box {	
+	width: 25%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.fs_hot_promotions .fs_product {
+	max-width: 290px;
+}
+
+.fs_hot_promotions .fs_product .fs_area_pic {
+	width: 90%;
+	max-width: 300px;
+}
+
+.fs_hot_promotions .fs_area_pic img {
+   width: auto;
+   height: auto;
+   margin: 0 auto;
+   max-width: 100%;
+}
+
+.fs_hot_promotions .fs_product h3 {
+   font-size: 16.67px;
+}
+
+.fs_promotion_value, .fs_promotion_code {
+	font-family:"iCielSamsungSharpSansBold", arial;
+	font-weight: normal;
+	font-size: 16.67px;
+}
+
+.fs_promotion_value {
+	margin-bottom: 10px;
+}
+
+.fs_promotion_value strong {
+	font-size: 25px;
+	display: inline-block;
+	background-image: url(../images/bg_text.png);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: #c8a595;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+		
+	.fs_promotion_value strong {
+		background-image:none;
+	}
+ }
+
+/*where to buy*/
+.fs_where_to_buy {
+	padding-bottom: 6vw;
+	background-image: linear-gradient(to top, #ececec, #eeeeee 54%, #ffffff);
+}
+
+.fs_where_to_buy .fs_title {
+	margin-bottom: 2.5vw;
+}
+
+.fs_agencys {
+	width: 66.92%;
+	max-width: 1290px;
+	margin: 0 auto;
+	font-size: 0;
+	text-align: center;
+}
+
+.fs_agencys .fs_box {
+	width: 25%;
+	display: inline-block;
+	vertical-align: top;
+	padding: 14px;
+}
+
+.fs_agencys .fs_box a {
+	display: block;
+	width: 100%;
+	padding: 9px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,0.24);
+	color: #000;
+}
+
+.fs_agencys .fs_box img {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.fs_btn_mask {
+	display: inline-block;
+	margin: 15px 0;
+	padding: 9px 22px;
+	border: 1px solid #000;
+	font-size: 12px;
+	text-transform: uppercase;
+	-webkit-border-radius:30px;
+	border-radius:30px;
+	text-transform: uppercase;
+}
+
+
+/*popup*/
+.fs_overlay {
+	position:fixed;
+	left:0;
+	top:0;
+	width:100vw;
+	height:100vh;
+	background-color:rgba(0,0,0,0.9);
+	z-index:10;
+	visibility:hidden;
+	opacity:0;
+	-webkit-transition:all 0.3s ease-in-out 0s, visibility 0s linear 0.3s;	
+	transition:all 0.3s ease-in-out 0s, visibility 0s linear 0.3s
+}
+
+.fs_overlay.fs_active {
+	opacity:1;
+	visibility:visible;
+	-webkit-transition-delay:0s, 0s;
+	transition-delay:0s, 0s
+}
+
+.fs_close_overlay {
+	position: absolute;
+	right: 30px;
+	top:30px;
+	width: 40px;
+	height: 40px;
+	background: url(../images/icon_close.png) no-repeat center center;
+	z-index: 2;
+}
+
+.fs_overlay_inr {
+	position:relative;
+	display:block;
+	width:100%;
+	height:100%;
+	text-align: center;
+}
+
+.fs_overlay_inr > div {
+	display: none;
+	position: relative;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	box-shadow: 0 0 70px rgba(89,55,43,0.5);
+}
+
+.fs_overlay_inr > div.fs_game, .fs_overlay_inr > div.fs_gilt  {
+	-webkit-border-radius:0;
+	border-radius:0;
+	box-shadow:none;
+}
+
+.fs_overlay_inr > div.fs_show {
+	display: inline-block;
+}
+
+.fs_overlay_inr::before,
+.fs_overlay_inr::after {
+	content: '';
+	position: relative;
+	display: inline-block;
+	width: 0;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.fs_game {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.fs_game_title {
+	position: relative;
+	display: block;
+	width: 72%;
+	margin: 0 auto -7% auto;
+}
+
+.fs_game_title img {
+	width: 100%;
+	height: auto;
+}
+
+.fs_game_box {
+	position: relative;
+	display:block;
+	width: 75vh;
+	height: 75vh;
+	margin: 0 auto;
+}
+
+.fs_roulette_overlay, .fs_roulette {
+	position: absolute;
+	display: block;
+	left: 0;
+	top:0;
+	width: 100%;
+	height: 100%;
+}
+
+.fs_roulette_overlay {
+	background: url(../images/game_overlay.png) no-repeat center center;
+	background-size:cover;
+	opacity: 0.6;
+}
+
+.fs_roulette {
+	background: url('../images/ruolete-map.png') no-repeat center center;
+	background-size:cover;
+	opacity: 0.6;
+}
+
+.fs_playing .fs_roulette_overlay, .fs_playing .fs_roulette {
+	opacity: 1;
+}
+
+.fs_spinner {
+	position: absolute;
+	width: 39%;
+	height: auto;
+	left: 50%;
+	top:50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+	cursor: pointer;
+	background: url('../images/arrow.png') no-repeat center center;
+	background-size: cover;
+	z-index: 10;
+	border: none;
+	-webkit-appearance: none;
+	font-size: 0;
+	
+}
+
+.fs_spinner::before {
+	content: '';
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+	padding-top: 100%;
+}
+
+.fs_roulete_price {
+	position: absolute;
+	left: 10px;
+	top:10px;
+	z-index: 10;
+	color: #fff;
+}
+
+.fs_game_time {
+	position: relative;
+	display: block;
+	margin-top: -7%;
+}
+
+.fs_game_time p {
+	font-family:"iCielSamsungSharpSansMedium", arial;
+	font-weight: normal;
+	font-size: 22px;
+	color: #fff;
+}
+
+.fs_game_time p small {
+	font-weight: inherit;
+	font-size: inherit;
+	font-family: inherit;
+	color: inherit;
+}
+
+.fs_game_time p strong {
+	font-family:"iCielSamsungSharpSansBold", arial;
+}
+
+/*gift login message*/
+.fs_gilt, .fs_login, .fs_message {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.fs_gilt {
+	position: relative;
+	width: 85vh;
+	height: 85vh;
+	background: url(../images/gift_overlay.png) no-repeat center center;
+	background-size: cover;
+}
+
+
+.fs_gilt_title {
+	position: relative;
+	top:4.9vw;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	color: #fff;
+	text-align: center;
+}
+
+.fs_gilt_title img {
+	width: 72%;
+	display: block;
+	margin: 0 auto;
+}
+
+.fs_gilt_title h3, .fs_gilt_title span, .fs_gilt_title p {
+	font-family:"iCielSamsungSharpSansBold", arial;
+	font-weight: normal;
+}
+
+.fs_gilt_title span, .fs_gilt_title p {
+	display: block;
+	font-size: 1.614583vw;
+}
+
+.fs_gilt_title .fs_area_pic {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+	line-height: 0;
+	overflow: hidden;
+}
+
+.fs_gilt_title img {
+	position: relative;
+	display: block;
+	width: 70.6666%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.fs_gilt_detail {
+	position: absolute;
+	left: 0;
+	top:36%;
+	width: 100%;
+	height: auto;
+	color: #fff;
+	text-align: center;
+	z-index: 1;
+}
+
+.fs_gilt_detail h3 {
+	margin-bottom: 0.5vw;
+	font-family:"iCielSamsungSharpSansBold", arial;
+	font-weight: normal;
+	font-size: 3.177083vw;
+}
+
+.fs_gilt_detail span {
+	display: initial;
+	font-size: inherit;
+	font-weight: inherit;
+	font-family: inherit;
+}
+
+.fs_gilt_detail p {
+	margin-bottom: 1vw;
+	font-family:"iCielSamsungSharpSansBold", arial;
+	font-weight: normal;
+	font-size: 1.614583vw;
+	line-height: 1.1;
+}
+
+.fs_gilt_detail img {
+	display: inline-block;
+	width: auto;
+	height: auto;
+	max-width: 100%;
+}
+
+.fs_flare_top {
+	position: absolute;
+	left: 73%;
+	top:7%;
+	width: 20%;
+	height: 20%;
+	background: url(../images/flare_top.png) no-repeat center center;
+	background-size: cover;
+}
+
+.fs_flare_bot {
+	position: absolute;
+	right: 69%;
+	bottom: 7%;
+	width: 20%;
+	height: 20%;
+	background: url(../images/flare_bot.png) no-repeat center center;
+	background-size: cover;
+	z-index: 0;
+}
+
+/*login*/
+.fs_login {
+	width: 90%;
+	max-width: 1030px;
+	background: #2e353c url('../images/login_overlay.png') repeat-x left bottom;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	padding: 40px 0;
+}
+
+.fs_login .fs_box {
+	width: 58%;
+	float: left;
+	z-index: 1;
+}
+
+.fs_login .fs_box:nth-child(1) {
+	padding: 0 0 0 10%;
+}
+
+.fs_login .fs_box:nth-child(2) {
+	width: 42%;
+	padding:0 3.2%;
+	float: right;
+}
+
+.fs_group {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+	margin-bottom: 18px;
+}
+
+.fs_group input[type="text"] {
+	display: block;
+	width: 100%;
+	height: 54px;
+	padding: 0 22px;
+	background-color: #ebebeb;
+	font-family:"iCielSamsungSharpSansMedium", arial;
+	font-weight: normal;
+	font-size: 22px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+::-webkit-input-placeholder {
+	color:#9f9f9f;
+}
+
+::-moz-placeholder {
+	color: #9f9f9f;
+}
+
+:-ms-input-placeholder {
+	color: #9f9f9f;
+}
+
+:-moz-placeholder {
+	color: #9f9f9f;
+}
+
+.fs_overlay_inr button {
+	display: inline-block;
+	width: 229px;
+	height: 48px;
+	margin-top: 7px;
+	font-family: 'iCielSamsungSharpSansBold';
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 1;
+	text-transform: uppercase;
+	color: #000;
+	background: url(../images/cta_but.png) no-repeat center center;
+	cursor: pointer;
+}
+
+.fs_overlay_inr button span {
+	position: relative;
+	top:4px;
+}
+
+.fs_check {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+	padding: 2px 0 0 32px;
+	text-align: left;
+}
+
+.fs_check input {
+	position: absolute;
+	left: 0;
+	top:0;
+	display: inline-block;
+	vertical-align: middle;
+	width: 19px;
+	height: 19px;
+	z-index: 2;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.fs_check_mask {
+	font-family: 'iCielSamsungSharpSansRegular';
+	font-weight: normal;
+	color: #fff;
+	font-size: 13px;
+	line-height: 1.2;
+}
+
+.fs_check_mask::before {
+	content:'';
+	position:absolute;
+	left:0;
+	top:0;
+	display:inline-block;
+	width:19px;
+	height:19px;
+	background-color: #ebebeb;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	z-index: 0;
+}
+
+.fs_check_mask::after {
+	content:'';
+	position:absolute;
+	left:6px;
+	top:2px;
+	display:block;
+	width:7px;
+	height:12px;
+	border:solid #000;
+	border-width:0 2px 2px 0;
+	-webkit-transform:rotate(45deg);
+	transform:rotate(45deg);
+	opacity:0;
+	z-index: 1;
+}
+
+.fs_check input:checked + .fs_check_mask::after{
+	opacity:1;
+}
+
+.fs_login .fs_area_pic {
+	width: 100%;
+	height: 360px;
+}
+
+.fs_login img {
+	width: 100%;
+	height: auto;
+	max-width: 100%;
+}
+
+
+.fs_login .fs_area_txt {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.fs_is_frame img{
+	margin-top: 10px;
+}
+
+.fs_is_electric img{
+	width: auto;
+	height: auto;
+	max-width: inherit;
+	margin-top: 30px;
+}
+
+
+.fs_login h3,
+.fs_login p {
+	font-family: 'iCielSamsungSharpSansBold';
+	font-weight: normal;
+	color: #fff;
+}
+
+.fs_login h3 {
+	font-size: 61px;
+}
+
+.fs_login h3 span {
+	display: block;
+	font-size: 31px;
+}
+
+.fs_login p {
+	font-size: 26px;
+	margin-bottom: 22px;
+}
+
+.fs_login .fs_area_txt p {
+	font-size: 27px;
+	margin: 0;
+}
+
+.fs_is_ru img {
+	margin-top: 10px;
+}
+
+.fs_is_washing  img {
+	width: auto;
+	height: auto;
+	max-width: 106%;
+}
+
+.fs_is_cgv img{
+	width: auto;
+	height: auto;
+	max-width: inherit;
+	margin-top: -80px;
+}
+
+.fs_is_cgv .fs_area_txt {
+	bottom: -100px;
+}
+
+.fs_bg_box {
+	position: absolute;
+	left: 0;
+	top:0;
+	width: 100%;
+	height: 100%;
+}
+
+.fs_line_left {
+	position: absolute;
+	left: 0;
+	top:32px;
+	width: 10px;
+	height: calc(100% - 64px);
+	background: url(../images/bg_line_left.png) repeat-y center top;
+}
+
+.fs_line_top {
+	position: absolute;
+	left: 32px;
+	top:0;
+	width: calc(100% - 64px);
+	height: 10px;
+	background: url(../images/bg_line_top.png) repeat-x center top;
+}
+
+.fs_line_right {
+	position: absolute;
+	right: 0;
+	top:32px;
+	width: 10px;
+	height: calc(100% - 64px);
+	background: url(../images/bg_line_right.png) repeat-y center top;
+}
+
+.fs_line_bottom {
+	position: absolute;
+	left: 32px;
+	bottom:0;
+	width: calc(100% - 64px);
+	height: 10px;
+	background: url(../images/bg_line_bottom.png) repeat-x center top;
+}
+
+.fs_conner_left_top {
+	position: absolute;
+	left: 0;
+	top:0;
+	width: 32px;
+	height: 32px;
+	background: url(../images/bg_conner_left_top.png) no-repeat left top;
+}
+
+.fs_conner_left_bottom {
+	position: absolute;
+	left: 0;
+	bottom:0;
+	width: 32px;
+	height: 32px;
+	background: url(../images/bg_conner_left_bottom.png) no-repeat left top;
+}
+
+.fs_conner_right_top {
+	position: absolute;
+	right: 0;
+	top:0;
+	width: 32px;
+	height: 32px;
+	background: url(../images/bg_conner_right_top.png) no-repeat right top;
+}
+
+.fs_conner_right_bottom {
+	position: absolute;
+	right: 0;
+	bottom:0;
+	width: 32px;
+	height: 32px;
+	background: url(../images/bg_conner_right_bottom.png) no-repeat right top;
+}
+
+
+/*message*/
+.fs_message {
+	width: 90%;
+	padding: 3.75vw 0 3.3333vw 0;
+	max-width: 1030px;
+	background: #2e353c url('../images/login_overlay.png') repeat-x left bottom;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+
+.fs_message .fs_box {
+	z-index: 2;
+}
+
+.fs_message .fs_area_pic img {
+	width: auto;
+	height: auto;
+	max-width: 202px;
+	margin: 0 auto 2.60416vw auto;
+}
+
+.fs_message  h2 {
+	font-family: 'iCielSamsungSharpSansBold';
+	font-weight: normal;
+	font-size: 48px;
+	color: #fff;
+	line-height: 1.4;
+}
+
+.fs_message.fs_lose {
+	padding: 7vw 0;
+}
+
+.fs_lose button {
+	margin-top: 62px;
+	width: 259px;
+	background: url(../images/cta_but_big.png) no-repeat center center;
+	color: #000;
+}
+
+.fs_lose button span {
+	top:2px;
+}
+
+.fs_game_over  {
+	padding: 7vw 0;
+}
+
+.fs_game_over .fs_area_txt {
+	margin-bottom: 3vw;
+}
+
+.fs_game_count {
+	padding: 7vw 0;
+}
+
+.fs_game_count button {
+	margin: 64px 30px 0 30px
+}
+
+.fs_error_txt {
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	text-align: left;
+	line-height: 54px;
+	padding: 0 22px 0 46px;
+	background: #ebebeb;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	display: none;
+}
+
+.fs_error_txt::before {
+	content: '';
+	position: relative;
+	display: inline-block;
+	position: absolute;
+	left: 22px;
+	top:50%;
+	width: 15px;
+	height: 14px;
+	margin: -8px 0 0 0;
+	background:url(../images/errr_icon.png) no-repeat center center;
+	background-size: cover;
+}
+
+.fs_error_txt p {
+	display: inline-block;
+	font-family:"iCielSamsungSharpSansMedium", arial;
+	font-weight: normal;
+	font-size: 15px;
+	color: #ff0000;
+	line-height: 1.2;
+	vertical-align: middle;
+	margin: 0;
+}
+
+.fs_show_error .fs_error_txt {
+	display: block;
+}
+
+.fs_show_error .fs_check_mask::before {
+	background: #ebebeb url(../images/errr_icon.png) no-repeat center center;
+	background-size: 11px auto;
+	
+}
+
+
+/*faq*/
+.fs_faq {
+	width: 90%;
+	max-width: 1030px;
+	background: #2e353c url('../images/login_overlay.png') repeat-x left bottom;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	color: #fff;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.fs_faq .fs_box {
+	width: 60%;
+	float: left;
+	z-index: 1;
+}
+
+.fs_faq .fs_box:nth-child(1) {
+	padding: 60px 0 0 6.5%;
+}
+
+.fs_faq .fs_box:nth-child(2) {
+	width: 40%;
+	padding:0;
+	float: right;
+}
+
+.fs_faq h3, .fs_faq p {
+	font-family: 'iCielSamsungSharpSansBold';
+	font-weight: normal;
+}
+
+.fs_faq .fs_check_mask {
+	font-family:"iCielSamsungSharpSansMedium", arial;
+	font-weight: normal;
+	font-size: 21px;
+}
+
+.fs_faq h3 {
+	font-size: 26px;
+}
+
+.fs_faq p {
+	font-size: 22px;
+	
+}
+.fs_faq h3, .fs_faq p, .fs_faq .fs_check {
+	margin-bottom: 30px;
+}
+
+.fs_faq .fs_check {
+	padding: 0 0 0 32px;
+}
+
+.fs_faq .fs_check input, .fs_faq .fs_check_mask::before {
+	width: 21px;
+	height: 21px;
+}
+
+.fs_faq .fs_check:last-child {
+	margin: 0;
+}
+
+.fs_faq  img {
+	margin: -80px 0 0 15%;
+}
